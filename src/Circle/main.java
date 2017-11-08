@@ -16,7 +16,11 @@ public class main extends Application{
 	@Override
 	public void start(Stage stage) throws Exception {
 		
-	        Circle circ = new Circle(40, 40, 30);
+	        Circle circ = new Circle(40);
+	        
+	        circ.setTranslateX(WorldWidth/2);
+	        circ.setTranslateY(WorldHigth/2);
+	        
 	        Group root = new Group(circ);
 	        Scene scene = new Scene(root, WorldWidth, WorldHigth);
 
